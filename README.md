@@ -20,8 +20,8 @@ Sử dụng câu lệnh trên cmd để tải thư mục thư viện được s�
 
 4. Ứng dụng sẽ tự động nhận diện khuôn mặt trong đầu vào của camera và hiển thị cảm xúc tương ứng theo thời gian thực.
 
-## How it Works
-ông nghệ Nhận diện Khuôn mặt API Python sử dụng Flask, một khung web dành cho Python, để lưu trữ một máy chủ web. Nó cũng sử dụng MediaDevices API và Canvas API được cung cấp bởi các trình duyệt web hiện đại để ghi lại dữ liệu đầu vào của camera và hiển thị kết quả theo thời gian thực.
+## Cách thức hoạt động
+Công nghệ Nhận diện Khuôn mặt API Python sử dụng Flask, một khung web dành cho Python, để lưu trữ một máy chủ web. Nó cũng sử dụng MediaDevices API và Canvas API được cung cấp bởi các trình duyệt web hiện đại để ghi lại dữ liệu đầu vào của camera và hiển thị kết quả theo thời gian thực.
 
 Khi trang web được tải, nó sẽ thiết lập kết nối websocket với máy chủ Flask. Máy chủ liên tục chụp các khung hình từ đầu vào của camera và thực hiện phát hiện cảm xúc khuôn mặt bằng thư viện Face-API.js và TensorFlow.js. Kết quả sau đó được gửi lại cho máy khách thông qua kết nối websocket và hiển thị trên trang web.
 
